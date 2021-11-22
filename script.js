@@ -30,3 +30,12 @@ tipBtn.forEach((btn) => {
     calc();
   });
 });
+custom.addEventListener("input", () => {
+  if (custom.value >= 0) {
+    tipBtn.forEach((e) => {
+      e.classList.remove("selected");
+    });
+    tip = custom.value;
+    calc();
+  }
+});
