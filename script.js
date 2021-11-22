@@ -39,3 +39,14 @@ custom.addEventListener("input", () => {
     calc();
   }
 });
+amount.addEventListener("input", () => {
+  amt = Number(amount.value);
+  if (amt <= 0 && amt != "") {
+    amount.classList.add("error");
+    amtErr.style.visibility = "visible";
+  } else {
+    amount.classList.remove("error");
+    amtErr.style.visibility = "hidden";
+    calc();
+  }
+});
