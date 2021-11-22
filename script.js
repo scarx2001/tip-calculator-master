@@ -61,3 +61,16 @@ people.addEventListener("input", () => {
     calc();
   }
 });
+reset.addEventListener("click", rst);
+function rst() {
+  amount.value = "";
+  people.value = "1";
+  custom.value = "";
+  perPerson.innerHTML = "$0.00";
+  total.innerHTML = "$0.00";
+
+  tipBtn.forEach((e) => {
+    e.classList.remove("selected");
+    e.classList.add("unselected");
+  });
+}
