@@ -74,3 +74,11 @@ function rst() {
     e.classList.add("unselected");
   });
 }
+function calc() {
+  if (amt >= 0 && ppl >= 1) {
+    let totalTip = (tip * amt) / 100;
+    let totalAmt = amt + totalTip;
+    perPerson.innerHTML = `$${(totalTip / ppl).toFixed(2)}`;
+    total.innerHTML = `$${(totalAmt / ppl).toFixed(2)}`;
+  }
+}
