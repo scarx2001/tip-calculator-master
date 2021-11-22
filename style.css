@@ -88,6 +88,10 @@ input::-webkit-inner-spin-button {
   color: red;
   font-weight: 700;
 }
+.amt-error,
+.people-error {
+  visibility: hidden;
+}
 
 .tip {
   font-size: 1.5em;
