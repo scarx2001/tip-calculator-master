@@ -50,3 +50,14 @@ amount.addEventListener("input", () => {
     calc();
   }
 });
+people.addEventListener("input", () => {
+  ppl = people.value;
+  if (ppl <= 0 && ppl != "") {
+    people.classList.add("error");
+    pplErr.style.visibility = "visible";
+  } else {
+    people.classList.remove("error");
+    pplErr.style.visibility = "hidden";
+    calc();
+  }
+});
